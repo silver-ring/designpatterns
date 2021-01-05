@@ -1,6 +1,5 @@
 package designpatterns.example.stracture.adaptor;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -22,7 +21,6 @@ public class DataServiceAdaptorTest {
         int newText2Index = newApiEndpoint.validateAndSaveText(text2);
         assertEquals(text1, newApiEndpoint.validateAndGetText(newText1Index));
         assertEquals(text2, newApiEndpoint.validateAndGetText(newText2Index));
-
     }
 
 }
